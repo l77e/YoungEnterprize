@@ -6,8 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
-    <title>Material Design Bootstrap</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <meta name="theme-color" content="#4285F4">
+    <title>Young Enterprize</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -31,7 +32,6 @@
         
         .navbar {
             background-color: #4285F4;
-            
         }
         
         .top-nav-collapse {
@@ -43,53 +43,54 @@
             position: float;
             bottom: 0;
             width: 100%;
-
         }
+        
         #conten {
             padding: 8px;
         }
+        
         #price {
-            font-family: "QuickSand","CreteRound";
+            font-family: "QuickSand", "CreteRound";
         }
+        
         @media only screen and (max-width: 600px) {
             .navbar {
                 background-color: #4285F4;
             }
             footer.page-footer {
-            background-color: #4285F4;
-            width: 100%;
-        }
-        #navprotect {
-         padding: 30px;
-     }
-     #cover {
-         width: 100%;
-     }
-     #info {
-         padding: 8px;
-     }
-     
+                background-color: #4285F4;
+                width: 100%;
+            }
+            #navprotect {
+                padding: 30px;
+            }
+            #cover {
+                width: 100%;
+            }
+            #info {
+                padding: 8px;
+            }
         }
         /* Carousel*/
         
         .carousel {
             height: 50%;
         }
-        
-        
         /*Caption*/
         
         .flex-center {
             color: #fff;
         }
+        
         .center {
-     float: none;
-     margin-left: auto;
-     margin-right: auto;
-     }
-     #navprotect {
-         padding: 40px;
-     }
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #navprotect {
+            padding: 40px;
+        }
     </style>
 
 </head>
@@ -124,9 +125,24 @@
                     </li>
                 </ul>
                 <!--Search form-->
-                <form class="form-inline">
-                    <input class="form-control" type="text" placeholder="Search">
-                </form>
+                <div class="gcse-searchbox" data-resultsUrl="https://cse.google.com/cse/publicurl?cx=003714844945093971407:3v4cgctybau" data-newWindow="true" data-queryParameterName="search">
+                    <form class="form-inline">
+                        <script>
+  (function() {
+    var cx = '003714844945093971407:3v4cgctybau';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+                    <gcse:search><input class="form-control" type="text" placeholder="Search"></gcse:search>
+                        
+
+                    </form>
+                </div>
             </div>
             <!--/.Collapse content-->
 
@@ -138,16 +154,16 @@
 
     <!--Content-->
     <div class="" id="navprotect"></div>
-<div class="container row" id="conten">
-     
-<img src="http://mdbootstrap.com/images/regular/city/img%20(8).jpg" class="img-fluid col-xs-7" id="cover" alt="">
-<div class="col-xs-offset-6 " id="info">
-    <h1>Product</h1>
-    <p>This product will change your life!</p>
-    <p class="lead" id="price">£10.99</p>
-    <button class="btn btn-primary animated fadeInDown">Buy Now</button>
-</div>
-</div>
+    <div class="container row" id="conten">
+
+        <img src="http://mdbootstrap.com/images/regular/city/img%20(8).jpg" class="img-fluid col-xs-7" id="cover" alt="">
+        <div class="col-xs-offset-6 " id="info">
+            <h1>Product</h1>
+            <p>This product will change your life!</p>
+            <p class="lead" id="price">£10.99</p>
+            <button class="btn btn-primary animated fadeInDown">Buy Now</button>
+        </div>
+    </div>
     <!--/.Content-->
 
 
@@ -166,7 +182,7 @@
 
                     <p>Needs written</p>
                 </div>
-               
+
 
             </div>
         </div>
