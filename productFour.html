@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <meta name="theme-color" content="#4285F4">
-       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Opportunity - About</title>
+    <meta name="theme-color" content="#4285F4">
+    <title>Opportunity</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -39,8 +39,19 @@
             /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#32a6ff', endColorstr='#ffffff', GradientType=0);
             /* IE6-9 */
+            background-repeat: no-repeat;
         }
         /* Navigation*/
+        
+        #cover {
+            height: 8 0%;
+            margin: 1%;
+            margin-bottom: 10px;
+        }
+        
+        #info {
+            padding-top: 2%;
+        }
         
         .navbar {
             background-color: #FC3F1D;
@@ -58,16 +69,16 @@
         }
         
         #conten {
-            margin-left: 25%;
-            margin-right: 20%;
-            padding-bottom: 16%;
+            margin-left: 4%;
+            margin-right: 4%;
+            padding-bottom: 0%;
         }
         
         #price {
             font-family: "QuickSand", "CreteRound";
         }
         
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 800px) {
             .navbar {
                 background-color: #FC3F1D;
             }
@@ -84,14 +95,11 @@
             #info {
                 padding: 8px;
             }
-            body {
-                background: white;
-            }
         }
         /* Carousel*/
         
         .carousel {
-            height: 50%;
+            height: 60%;
         }
         /*Caption*/
         
@@ -122,15 +130,17 @@
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
             <i class="fa fa-bars"></i>
         </button>
+
         <div class="container">
+
             <!--Collapse content-->
             <div class="collapse navbar-toggleable-xs" id="collapseEx">
                 <!--Navbar Brand-->
-                <a class="navbar-brand white-text" herf="index.html">Opportunity</a>
+                <a class="navbar-brand white-text" herf="index.html" target="_blank">Opportunity</a>
                 <!--Links-->
                 <ul class="nav navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home<span class="sr-only">Home</span></a>
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="members.html">All Products</a>
@@ -156,40 +166,43 @@
 
 
     <!--Content-->
-    <div class="card-group">
-    <div class="card"><a herf="productOne.html">
-        <img class="img-fluid" src="https://github.com/l77e/opportunity/blob/gh-pages/img/REINDEER.jpg?raw=true" alt="Card image cap"></a>
-        <div class="card-block">
-            <h4 class="card-title"><a herf="productOne.html">Reindeer Soap Facecloth</a></h4>
-            <p class="card-text">Premium Soap wrapped in a reindeer shaped facecloth</p></a>
-            <p class="card-text text-uppercase"><small class="text-muted">limited edition</small></p>
-        </div>
-    </div>
-        <div class="card">
-            <a herf="productTwo.html">
-        <img class="img-fluid" src="https://github.com/l77e/opportunity/blob/gh-pages/img/bulbsquare.JPG?raw=true" alt="Card image cap"></a>
-        <div class="card-block">
-            <h4 class="card-title"><a href="productTwo.html">Quality Street Christmas Bobbles</a></h4>
-            <p class="card-text">Shiny Christmas baubbles filled with delicious Quality Street</p>
-            <p class="card-text text-uppercase"><small class="text-muted">limited edition</small></p>
-        </div>
-    </div>
-    <div class="card">
-       <a href="productThree.html"> <img class="img-fluid" src="img/bag.jpg" alt="Card image cap"></a>
-        <div class="card-block">
-            <h4 class="card-title"><a href="productThree.html">Hessain Christmas Bag</a></h4>
-            <p class="card-text">This fantastic handmade craft item is as beautiful and astheticly pleasing as
-                it is useful. All bags have a unique handcrafted christmas decorations.</p>
-            <p class="card-text"><small class="text-muted text-uppercase">available</small></p>
-        </div>
-    </div>
-</div>
+    <div class="" id="navprotect"></div>
+    <div class="container row card" id="conten">
 
+        <img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.thecandystoreonline.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F1%2Fimage%2F1000x1000%2F9df78eab33525d08d6e5fb8d27136e95%2Ft%2Fe%2Fteachermug_1_4.jpg&f=1" class="col-xs-7 img-fluid" id="cover" alt="">
+        <div class="col-xs-offset-6 " id="info">
+            <h1>Sweet Mug</h1>
+            <p class="">Mugs Which are filed with delicous candy
+            </p>
+            <p class="lead" id="price">£2.50</p>
+            <p class="text-uppercase">please select this item before purchasing below</p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="33JZ5KHLC3L7U">
+                <table>
+                    <tr>
+                        <td><input type="hidden" name="on0" value="Items"></td>
+                    </tr>
+                    <tr>
+                        <td><select name="os0">
+	<option value="Reindeer Soap">Reindeer Soap £3.00 GBP</option>
+	<option value="Quality St. Baubble">Quality St. Baubble £2.50 GBP</option>
+	<option value="Hessian Xmas Bag">Hessian Xmas Bag £4.00 GBP</option>
+</select> </td>
+                    </tr>
+                </table>
+                <input type="hidden" name="currency_code" value="GBP">
+                <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+            </form>
+
+        </div>
+    </div>
     <!--/.Content-->
 
 
 
-     <!--Footer-->
+    <!--Footer-->
     <footer class="page-footer center-on-small-only">
 
         <!--Footer Links-->
@@ -199,9 +212,9 @@
                 <!--First column-->
                 <div class="col-md-3 offset-md-1">
                     <h5 class="title">ABOUT OPPORTUNITY</h5>
-                    <p>A young enterprise company that creates and inovates.</p>
+                    <p>A young enterprise company dedicated to creating and innovating</p>
 
-                    <p>...</p>
+                    <p></p>
                 </div>
                 <!--/.First column-->
 
@@ -212,9 +225,9 @@
                     <h5 class="title">Sale Items
                     </h5>
                     <ul>
-                        <li><a href="productOne.html">Sweet Mug</a></li>
-                        <li><a href="productTwo.html">Quality St. Bobbles</a></li>
-                        <li><a href="productThree.html">Valintines Hessain Bags</a></li>
+                        <li><a href="productOne.html">Christmas Reindeer Soap</a></li>
+                        <li><a href="productTwo.html">Quality Street Christmas Bobbles</a></li>
+                        <li><a href="productThree.html">Hessain Bag</a></li>
                     </ul>
                 </div>
                 <!--/.Second column-->
@@ -225,9 +238,13 @@
                 <div class="col-md-2">
                     <h5 class="title">Site Links</h5>
                     <ul>
-                        <li><a href="#!"></a></li>
-                        <li><a href="#!"></a></li>
-                        <li><a href="members.html">Members</a></li>
+                        <li>
+                            <a href="#!"></a>
+                        </li>
+                        <li>
+                            <a href="#!"></a>
+                        </li>
+                        <li><a href="members.html">All Products</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
@@ -240,9 +257,15 @@
                     <h5 class="title">Social</h5>
                     <ul>
                         <li><a href="https://www.facebook.com/opportunity.ye">Facebook</a></li>
-                        <li><a href="#!"></a></li>
-                        <li><a href="#!"></a></li>
-                        <li><a href="#!"></a></li>
+                        <li>
+                            <a href="#!"></a>
+                        </li>
+                        <li>
+                            <a href="#!"></a>
+                        </li>
+                        <li>
+                            <a href="#!"></a>
+                        </li>
                     </ul>
                 </div>
                 <!--/.Fourth column-->
@@ -256,7 +279,7 @@
         <!--Copyright-->
         <div class="footer-copyright">
             <div class="container-fluid">
-                Created by Luke Edgar, Stuart McCune & Siam Alderdice
+                Site Created and Operated by Luke Edgar
 
             </div>
         </div>
